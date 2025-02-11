@@ -1,0 +1,5 @@
+document.write("Name: Imran Husain <br>")
+        document.write("Age: 23<br>")
+        document.write("Batch: P47 <br>")
+        document.write("Address: Bhopal (M.P) <br>")
+        document.write("Hello, MY naem is Imran and i am a MERN FULL STACK Developer")
