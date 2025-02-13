@@ -1,0 +1,37 @@
+<!-- Write a program to swap two values using third variable input should taken from the user-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Swap Values</title>
+</head>
+<body>
+    <h1>Swap Values</h1>
+
+    <script>
+        let value1 = parseFloat(prompt("Enter First Value: "));
+        let value2 = parseFloat(prompt("Enter Second Value: "));
+        let temp;
+
+        document.write("Before Swappin Values <br><br>");
+        document.write("Value1 is: "+value1+"<br>");
+        document.write("Value2 is: "+value2+"<br><br><br>");
+
+        temp = value1;
+        value1 = value2;
+        value2 = temp;
+
+        document.write("After Swappin Values <br><br>");
+        document.write("Value1 is: "+value1+"<br>");
+        document.write("Value2 is: "+value2+"<br><br><br>");
+     
+        
+
+
+
+    </script>
+</body>
+</html>
