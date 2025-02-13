@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Arithematic : +, -, *, /, %
+
+        let num1 = parseInt(prompt("Enter First Num: "));
+        let num2 = parseInt(prompt("Enter Second Num: "));
+        let addition = num1 + num2;
+        let subtraction = num1 - num2;
+        let multiplication = num1 * num2;
+        let devision = num1 / num2;
+        let modulus = num1 % num2;
+
+        console.log("THIS IS ARITHEMATIC OPERATION ")
+        console.log(num1 + " + " + num2 + " = " + addition);
+        console.log(num1 + " - " + num2 + " = " + subtraction);
+        console.log(num1 + " * " + num2 + " = " + multiplication);
+        console.log(num1 + " / " + num2 + " = " + devision);
+        console.log(num1 + " % " + num2 + " = " + modulus);
+
+        // Relational:  ==, ===, <, >, >=, <=, !=
+
+        console.log("THIS IS RETATIONAL OPERATION ")
+        console.log(num1 + " == " + num2 + " = " + (num1 == num2));
+        console.log(num1 + " > " + num2 + " = " + (num1 > num2));
+        console.log(num1 + " < " + num2 + " = " + (num1 < num2));
+        console.log(num1 + " >= " + num2 + " = " + (num1 >= num2));
+        console.log(num1 + " <= " + num2 + " = " + (num1 <= num2));
+
+        // Assignment: =, +=, -=, *=, /=
+
+        console.log("THIS IS ASSIGNMENT OPERATION ")
+        num1 = 90;
+        console.log("Assign num1 = 90 : " + num1);
+
+        num1 += 10;
+        console.log("Assign num1 += 10 : " + num1);
+
+        num1 -= 10;
+        console.log("Assign num1 -= 10 : " + num1);
+
+        num1 *= 10;
+        console.log("Assign num1 *= 10 : " + num1);
+
+        num1 /= 10;
+        console.log("Assign num1 /= 10 : " + num1);
+
+
+        // Logical: &&, or, Not
+
+        console.log("THIS IS LOGICAL OPERATION ")
+
+        let a = 10;
+        let b = 20;
+
+        // true && true = true
+        let result = (a < 15) && (b > 15);
+        console.log(result);
+
+
+        // false && true = true
+        result = (a > 15) || (b > 15);
+        console.log(result);
+
+        //false = true
+        result = a!=15;
+        console.log(result);
+
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+<!-- homework -->
+
+<!-- write a program to find array of circule radius should taken from the user -->
+<!-- write a program to swap two values using third value input should taken from the user-->
+<!-- write a program to add two numbers and find squire of answer-->
