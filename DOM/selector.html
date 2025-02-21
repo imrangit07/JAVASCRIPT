@@ -6,12 +6,34 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="Imran" class="hussain">Imran</h1>
+    <h1 id="Imran">Imran</h1><br>
+
+    <h2 class="hussain">Hussain</h2>
+    <h2 class="hussain">Hussain</h2>
+    <h2 class="hussain">Hussain</h2>
+    <h2 class="hussain">Hussain</h2>
+    <h2 class="hussain">Hussain</h2>
+    <br>
+
+    <h3>Head</h3>
+    <h3>Head</h3>
+    <h3>Head</h3>
+    <h3>Head</h3>
+
 
     <script>
-        document.getElementById("Imran");//This is id selector := return-single Node;
-        document.getElementsByClassName("hussain");//This is class selector  := return Node list (Array format);
-        document.getElementsByTagName("h1");//This is tag selector := return Node list (Array format);
+       let imran =  document.getElementById("Imran");//This is id selector := return-single Node;
+    //    console.log(imran);
+    //    imran.textContent = "Hello, Imran Hussain";  // Change only text;
+       imran.innerHTML = "<i>Hello, Imran Hussain </i>"; //Change text or add tags
+       
+       
+       let hussain = document.getElementsByClassName("hussain");//This is class selector  := return Node list (Array format);
+    //    console.log(hussain);
+       
+       let head = document.getElementsByTagName("h3");//This is tag selector := return Node list (Array format);
+    //    console.log(head);
+       
 
         // document = This is object;
         // getElementById = This is a function (return Node);
