@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body>
+ <div id="box">
+    <img src="https://images.unsplash.com/photo-1428660386617-8d277e7deaf2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2Vyc3xlbnwwfHwwfHx8MA%3D%3D" width="200px" id="img" alt="This is image">
+
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vitae aspernatur omnis illo magni distinctio totam ut in asperiores, est quos quidem voluptatem sint dolor incidunt corrupti amet maiores tempora.</p>
+
+    <p id="second-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum aliquid perspiciatis nemo dolorem atque voluptatum mollitia impedit voluptas excepturi nihil, ab doloribus illo ex unde eligendi! Ea exercitationem temporibus labore!</p>
+
+    <button id="btn">Click Me</button>
+ </div>
+
+
+    <script>
+        const para = document.getElementById("para");
+        const para1 = document.getElementById("second-para");
+        const btn = document.getElementById("btn");
+        const img = document.getElementById("img");
+
+        para.textContent = "Hello,Imarn hussain";
+        para.style.fontWeight = "900";
+        para.style.fontSize= "40px";
+
+        para1.innerHTML = "<b>Imran Hussain,  ab doloribus illo ex unde eligendi! Ea exercitationem temporibus labore!<b>";
+
+        btn.style.padding ="10px 40px";
+        btn.style.backgroundColor ="green";
+        btn.style.borderRadius = "20px";
+        btn.style.border="none";
+
+        img.style.borderRadius = "50px";
+
+
+
+    </script>
+    
+</body>
+</html>
