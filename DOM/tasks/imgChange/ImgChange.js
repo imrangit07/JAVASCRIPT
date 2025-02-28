@@ -10,7 +10,7 @@ function Apple() {
 }
 
 function Orange() {
-    image.src = "img/Orange-PNG-Image.png.crdownload";
+    image.src = "img/orange.png";
 }
 function Watermelon() {
     image.src = "img/watermelon.png";
