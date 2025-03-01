@@ -1,0 +1,9 @@
+<!-- 1.What is ecmaScript -->
+<!-- 2.what is ES6 and its features -->
+
+
+
+//EVENTS
+//mouse Right click oncontextmenu
+
+oncontextmenu = "fun()";

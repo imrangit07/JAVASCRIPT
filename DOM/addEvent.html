@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>hello</li>
+        <li>imran</li>
+        <li>arman</li>
+        <li>imtiyaz</li>
+        <li>irfan</li>
+    </ul>
+
+
+    <script>
+        document.querySelector("li").addEventListener("click",(e)=>{
+            console.log(e);
+            console.log(`This is for X: ${e.x}`);
+            console.log(`This is for Y: ${e.y}`);
+            console.log(`This is for Type: ${e.type}`);
+            console.log(`This is for TimeStamp: ${e.timeStamp}`);
+            console.log(`This is for defaultPrevented: ${e.defaultPrevented}`);
+
+            console.log(e.target);
+            console.log(`This is for toElement: ${e.toElement}`);
+            console.log(e.currentTarget);
+            
+            console.log(`This is for clientX: ${e.clientX}`);
+            console.log(`This is for clientY: ${e.clientY}`);
+            console.log(`This is for screenX: ${e.screenX}`);
+            console.log(`This is for screenY: ${e.screenY}`);
+            console.log(`This is for movementX: ${e.movementX}`);
+            console.log(`This is for movementY: ${e.movementY}`);
+
+            console.log(`This is for altKey ${e.altKey}`);
+            
+        },false)//false or true is a Event Propagation
+
+        //type, timestamp, defaultPrevented
+        //target, toElement, srcElement, currentTarget
+        //clientX, clientY, screenX, screenY
+        //altKey, ctrlKey, shiftKey, keyCode
+    </script>
+</body>
+</html>
