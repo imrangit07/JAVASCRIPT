@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <img src="../imgChange/img/orange.png" id="img" width="200px" alt="">
+
+    <h1 id="click">Click For Image Change</h1>
+
+    <script>
+        let img = document.querySelector("#img");
+        let click = document.querySelector("#click");
+
+        let element1 = document.createElement("h1");
+        let Elenent = document.createElement("h1");
+        let btn = document.createElement("button");
+        
+        click.style.backgroundColor="red";
+        click.style.display="inline";
+        click.style.cursor="pointer";
+        click.style.padding="10px 20px";
+        click.style.borderRadius="10px";
+        click.style.color="#fff";
+
+        click.addEventListener("click",()=>{
+            img.src="../imgChange/img/apple.png"
+            img.style.border="2px solid red"
+            img.style.padding="20px 30px"
+        })
+        Elenent.textContent = "Hello, Imran hussain";
+        console.log(Elenent);
+
+
+        element1.textContent = "This is for Createing Text Content    ";
+        console.log(element1);
+
+        document.body.appendChild(element1);
+
+        btn.textContent = "Click Me";
+        console.log(btn);
+
+
+        document.body.appendChild(btn);
+
+
+
+
+    </script>
+
+    </bod
