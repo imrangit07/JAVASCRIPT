@@ -9,23 +9,28 @@ AddInput.addEventListener("click", () => {
 
     if (count <= 4) {
         count++;
-        console.log(count);
+        // console.log(count);
         let inputs = document.createElement("input");
         inputs.placeholder = "Enter Here";
         document.body.appendChild(inputs);
 
-        inputs.style.width = "350px";
-        inputs.style.padding = "10px 20px";
-        inputs.style.borderRadius = "10px 20px";
-        inputs.style.backgroundColor = "orange";
-        inputs.style.border = "1px solid #fff";
-        inputs.style.marginTop = "20px";
-
+        // This is for Styling
+            inputs.style.fontSize='22px';
+            inputs.style.setProperty('--placeholder-color','green');
+            inputs.style.setProperty('color','var(--placeholder-color)')
+            inputs.style.width = "350px";
+            inputs.style.padding = "10px 20px";
+            inputs.style.borderRadius = "10px 20px";
+            inputs.style.backgroundColor = "orange";
+            inputs.style.border = "1px solid #fff";
+            inputs.style.marginTop = "20px";
+     
     } else {
-        alert("NO more input");
+        alert("NO More Inputs");
     }
 
 })
+
 
 
 
