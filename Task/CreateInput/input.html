@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%
+        }
+
+        body {
+            width: 100vw;
+            height: auto;
+            padding-top: 100px;
+            background-color: blueviolet;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #addInput,
+        #sumBtn {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <input type="text" name="" id="input" placeholder="Enter Your Name"><br>
+
+        <div class="btn">
+            <button id="addInput">Add Input</button><br>
+            <button id="sumBtn">Submit</button><br>
+        </div>
+    </div>
+
+    <!-- Class List -->
+    <script src="CreateInput.js"></script>
+</body>
+
+</html>
