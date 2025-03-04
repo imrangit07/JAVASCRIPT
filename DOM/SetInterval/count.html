@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .allBtn{
+            display: flex;
+            gap: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="head">0</h1>
+    <div class="allBtn">
+        <button id="btn" onclick="startCount()">Start</button>
+    <button id="btnStop" onclick="stopCount()">Stop</button>
+    </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let btnStop = document.querySelector("#btnStop");
+        let head = document.querySelector("#head");
+        let count = 1;
+        let st;
+        function startCount() {
+            st=setInterval(() => {
+                head.textContent = count++;
+            },2000)
+        }
+
+        function stopCount(){
+            clearInterval(st);
+        }
+
+
+
+        // This is for styling
+
+        document.body.style.backgroundColor="#313131";
+        document.body.style.display="flex";
+        document.body.style.alignItems="center";
+        document.body.style.justifyContent="center";
+        document.body.style.flexDirection="column";
+
+        head.style.fontSize="55px";
+        head.style.color="red";
+
+        btn.style.padding="10px 20px";
+        btn.style.backgroundColor="green";
+        btn.style.border="none";
+        btn.style.borderRadius="10px";
+        btn.style.fontSize="20px";
+        btn.style.color="#fff";
+        btn.style.cursor="pointer";
+
+
+        btnStop.style.padding="10px 20px";
+        btnStop.style.backgroundColor="green";
+        btnStop.style.border="none";
+        btnStop.style.borderRadius="10px";
+        btnStop.style.fontSize="20px";
+        btnStop.style.color="#fff";
+        btnStop.style.cursor="pointer";
+
+    
+
+
+    </script>
+</body>
+
+</html>
