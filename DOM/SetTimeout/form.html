@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
 
-    <form action="" onsubmit="sumFun()">
-        <label for="">frst num</label>
+<body>
+
+
+    <form action="" onsubmit="return sumFun()">
+        <label for="">Frst Num</label>
         <input type="text" id="num1"><br><br>
 
-        <label for="">second num</label>
+        <label for="">Second Num</label>
         <input type="text" id="num2"><br><br>
-        
+
         <button type="submit">submit</button>
     </form>
 
     <script>
-      function sumFun(){
-        let num1 = parseInt(document.querySelector("#num1").value)
-        let num2 = parseInt(document.querySelector("#num2").value)
+        function sumFun() {
+            let num1 = parseInt(document.querySelector("#num1").value)
+            let num2 = parseInt(document.querySelector("#num2").value)
+            let sum = num1 + num2
 
-        alert(num1+num2)
-       }
+            let h1 = document.createElement("h1");
+            let add = document.body.appendChild(h1);
+            add.textContent = sum;
+
+            return false;
+
+        }
     </script>
-    
+
 </body>
+
 </html>
