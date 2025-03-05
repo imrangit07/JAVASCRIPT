@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <form action="" onsubmit="sumFun()">
+        <label for="">frst num</label>
+        <input type="text" id="num1"><br><br>
+
+        <label for="">second num</label>
+        <input type="text" id="num2"><br><br>
+        
+        <button type="submit">submit</button>
+    </form>
+
+    <script>
+      function sumFun(){
+        let num1 = parseInt(document.querySelector("#num1").value)
+        let num2 = parseInt(document.querySelector("#num2").value)
+
+        alert(num1+num2)
+       }
+    </script>
+    
+</body>
+</html>
