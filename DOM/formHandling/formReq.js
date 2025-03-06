@@ -19,7 +19,7 @@ function inputReq() {
         document.querySelector("#Email").focus();
         return false;
     } else if (!(email.includes('@'))) {
-        alert("please enter your valide email and must be @");
+        alert("please enter your valide email and must have @");
         document.querySelector("#Email").focus();
         return false;
     }
