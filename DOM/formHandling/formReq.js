@@ -81,6 +81,6 @@ function PrintDetails(name, email, age,pass,contact) { // This function for prin
     <b>Email id: </b> ${email}<br><br>
     <b>Age : </b> ${age} <br><br>
     <b>Password : </b> ${pass} <br><br>
-    <b>Pho. Number : </b> ${contact} <br><br>
+    <b>PNumber : </b> +91-${contact} <br><br>
     `;
 }
