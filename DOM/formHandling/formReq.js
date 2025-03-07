@@ -22,8 +22,14 @@ function inputReq() {
         return false;//false
     }
 
-    else if (!(email.includes('@')) || (!(email.includes('yahoo')) && !(email.includes('gmail')))) {//check @ and email/yahoo is included or not
-        alert("please enter your valide ID and must have @ && Gmail/Yahoo");
+    else if (!(email.includes('@'))) {//check @ and email/yahoo is included or not
+        alert("please enter your valide ID and must have @ ");
+        document.querySelector("#Email").focus();
+        return false;
+    }
+
+    else if (!(email.includes('yahoo')) && !(email.includes('gmail'))) {//check @ and email/yahoo is included or not
+        alert("please enter your valide ID and must have  Gmail/Yahoo");
         document.querySelector("#Email").focus();
         return false;
     }
