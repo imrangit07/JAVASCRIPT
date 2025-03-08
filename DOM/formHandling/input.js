@@ -1,12 +1,27 @@
-function sumFun() {
-    let num1 = parseInt(document.querySelector("#num1").value)
-    let num2 = parseInt(document.querySelector("#num2").value)
-    let sum = num1 + num2
+function subFun(event) {
+    event.preventDefault();
 
-    let h1 = document.createElement("h1");
-    let add = document.body.appendChild(h1);
-    add.textContent = sum;
+    let name = document.querySelector("#Name").value;
+    let email = document.querySelector("#Email").value;
+    let password = document.querySelector("#Password").value;
+    let gender = document.querySelector('input[name="gender"]:checked')?.value || "Not selected";
+    let country = document.querySelector("#Country").value;
 
-    return false;
+    let courses = Array.from(document.querySelectorAll('input[name="Course"]:checked'))
+        .map(checkbox => checkbox.value);
 
+    // let message = document.querySelector("#Message").value;
+
+    let print = `Name: ${name}<br><br>
+Email: ${email}<br><br>
+Password: ${password}<br><br>
+Gender: ${gender}<br><br>
+Country: ${country}<br><br>
+Courses: ${courses}<br><br>
+`;
+
+// console.log(print);
+
+
+document.querySelector(".form-container").innerHTML=print;
 }
