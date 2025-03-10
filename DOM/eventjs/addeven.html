@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click</button>
+    <button id="btnDb">Db Click</button>
+    <button id="btnEn">Mouse Enter</button>
+    <button id="btnLe">Mouse Leave</button>
+    <button id="btncontext">Right Click</button>
+</body>
+<script>
+    let btn = document.querySelector("#btn");
+    let btndb = document.querySelector("#btnDb");
+    let btnEnter = document.querySelector("#btnEn");
+    let btnLeave = document.querySelector("#btnLe");
+    let btnContext = document.querySelector("#btncontext");
+
+    btn.addEventListener("click",()=>{console.log("Hello,Imran");})
+    btndb.addEventListener("dblclick",()=>{alert("Hello,Imran");})
+    btnEnter.addEventListener("mouseenter",()=>{alert("Hello,Imran");})
+    btnLeave.addEventListener("mouseleave",()=>{alert("Hello,Imran");})
+    btnContext.addEventListener("contextmenu",()=>{alert("Hello,Imran");})
+</script>
+</html>
