@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        h1{
+        h1 {
             cursor: pointer;
         }
     </style>
 </head>
+
 <body style="display: flex;">
     <div class="head-box">
         <h1 id="laptop">Laptop</h1>
-    <h1 id="mobail">Mobail</h1>
-    <h1 id="tablet">Tablet</h1>
-    <h1 id="camera">Camera</h1>
-    <h1 id="tv">Tv</h1>
+        <h1 id="mobail">Mobail</h1>
+        <h1 id="tablet">Tablet</h1>
+        <h1 id="camera">Camera</h1>
+        <h1 id="tv">Tv</h1>
     </div>
-    <div >
-     <img src="img.jpg" alt="" id="img">
+    <div>
+        <img src="img.jpg" alt="" id="img">
     </div>
 </body>
 
 <script>
     let laptop = document.querySelector("#laptop")
     let mobail = document.querySelector("#mobail")
-    
+
     let tablet = document.querySelector("#tablet")
     let camera = document.querySelector("#camera")
     let tv = document.querySelector("#tv")
     let img = document.querySelector("#img")
-    
+
 
     console.log(img.src);
-    
-    
 
 
-    laptop.addEventListener("mouseenter",()=>{
-    img.src="th.jpg";
+
+
+    laptop.addEventListener("mouseenter", () => {
+        img.src = "th.jpg";
     })
-    tablet.addEventListener("mouseenter",()=>{
-    img.src="tablet.jpg";
+    tablet.addEventListener("mouseenter", () => {
+        img.src = "tablet.jpg";
     })
-    camera.addEventListener("mouseenter",()=>{
-    img.src="camera.jpg";
+    camera.addEventListener("mouseenter", () => {
+        img.src = "camera.jpg";
     })
-    tv.addEventListener("mouseenter",()=>{
-    img.src="tv.jpg";
+    tv.addEventListener("mouseenter", () => {
+        img.src = "tv.jpg";
     });
 
-    mobail.addEventListener("mouseenter",()=>{
-    img.src="mobail.jpg";
+    mobail.addEventListener("mouseenter", () => {
+        img.src = "mobail.jpg";
     })
     // mobail.addEventListener("mouseenter",()=>{
     // img.scr="mobail.jpg";
@@ -62,4 +64,5 @@
     //     img.src="mobail.jpg";
     // }
 </script>
+
 </html>

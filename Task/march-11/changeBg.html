@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .box{
+        .box {
             background-color: red;
             width: 500px;
             height: 500px;
         }
     </style>
 </head>
+
 <body>
     <div class="box"></div>
     <button id="bt">click</button>
 </body>
 <script>
-    let bt=document.querySelector("#bt");
-    let box=document.querySelector(".box");
-    bt.addEventListener("click",()=>{
-        box.style.backgroundColor="green"
+    let bt = document.querySelector("#bt");
+    let box = document.querySelector(".box");
+    bt.addEventListener("click", () => {
+        box.style.backgroundColor = "green"
     })
 
 </script>
+
 </html>
