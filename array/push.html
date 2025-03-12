@@ -3,13 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Push/Unshift,push/shift</title>
 </head>
 <body>
     <script>
         const arr = [2,3,4,5];
-        arr.push("Imran");
+        //for add Elements in front
+        arr.unshift("Imran","Arman");
+        arr.unshift("Hussain");
         console.log(arr);
+
+
+        //for remove front elements
+        arr.shift();
+        console.log(arr);
+
+
+        //for add elements in end of the array
+        arr.push("Irfan");
+        arr.push("Hussain");
+        console.log(arr);
+
+       
+        //for remove elements in end of the array
+        arr.pop()
+
+        console.log(arr);
+
         
     </script>
 </body>
