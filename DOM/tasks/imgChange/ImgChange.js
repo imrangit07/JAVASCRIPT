@@ -1,23 +1,27 @@
-// let Orange = document.getElementById("Orange");
-// let Watermelon = document.getElementById("Watermelon");
-// let Pineapple = document.getElementById("Pineapple");
-// let Sapodilla = document.getElementById("Sapodilla");
+
 let image = document.getElementById("image");
+let allBox = document.querySelectorAll("h1");
+// console.log(allBox);
+
+allBox.forEach((Event)=>{
+    Event.addEventListener("mouseenter",(Event)=>{
+        console.log(Event.target);
+        image.src =Event.target.dataset.image; 
+    }) 
+})
 
 
-function Apple() {
-    image.src = "img/apple.png";
-}
+// let image = document.getElementById("image");
+// let allBox = document.querySelector(".all-box");
+// // console.log(allBox);
 
-function Orange() {
-    image.src = "img/orange.png";
-}
-function Watermelon() {
-    image.src = "img/watermelon.png";
-}
-function Pineapple() {
-    image.src = "img/pineapple.png";
-}
-function Sapodilla() {
-    image.src = "img/Sapodilla.png";
-}
+// allBox.addEventListener("mouseover", (event) => {
+//     console.log(event.target.tagName);
+
+//     if (event.target.tagName == "H1") {
+//         image.src = event.target.getAttribute("data-image");
+//     }
+// })
+
+
+

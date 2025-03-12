@@ -21,7 +21,8 @@
             console.log(`This is for X: ${e.x}`);
             console.log(`This is for Y: ${e.y}`);
             console.log(`This is for Type: ${e.type}`);
-            console.log(`This is for TimeStamp: ${e.timeStamp}`);
+            console.log(`This is for Type: ${e.srcElement}`);
+            console.log(`This is for TimeStamp: ${e.timeStamp.toLocaleString()}`);
             console.log(`This is for defaultPrevented: ${e.defaultPrevented}`);
 
             console.log(e.target);
@@ -35,7 +36,9 @@
             console.log(`This is for movementX: ${e.movementX}`);
             console.log(`This is for movementY: ${e.movementY}`);
 
+            console.log(`This is for altKey ${e.detail}`);
             console.log(`This is for altKey ${e.altKey}`);
+            console.log(`This is for altKey ${e.type}`);
             
         },false)//false or true is a Event Propagation
 
