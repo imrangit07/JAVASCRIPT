@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let obj = {
+            name: {
+                firstName: "Imran",
+                lastName: "Hussain"
+            },
+            age: 23,
+            account: {
+                fac: "imran.facbook",
+                ins: "imran.ins",
+                gma: "imran@gmain",
+            },
+        }
+
+
+        // let shallowCopy1 =obj;
+
+        // Using Object.assign() - Shallow Copy
+        let shallowCopy1 = Object.assign({}, obj);
+
+        // This will affect `obj` too!
+        shallowCopy1.name.firstName = "Arman";
+
+        // console.log(obj);
+        // console.log(shallowCopy1);
+
+        // Using spread operator - Shallow Copy
+        let shallowCopy2 = { ...obj };
+
+
+        // This will affect `obj` too!
+        shallowCopy2.name.firstName = "Irfan";
+
+        // console.log(obj);
+        // console.log(shallowCopy2);
+
+        // DEEP COPY
+        // 1. JSON Method (Simple but Limited): Works only for JSON-safe data (no functions, undefined, circular references, or special objects like Date).
+
+        let deepCopy1 = JSON.parse(JSON.stringify(obj));
+        // This will not affect `obj`
+        deepCopy1.name.lastName = "huss";
+        // console.log(obj);
+        // console.log(deepCopy1);
+
+
+        // 2. Recursive Deep Copy (Handles Complex Cases):
+
+        let obj2 = {
+            name: {
+                firstName: "Arman",
+                lastName: "Hussain"
+            },
+            age: 23,
+            account: {
+                fac: "arman.facbook",
+                ins: "arman.ins",
+                gma: "arman@gmain",
+            },
+        }
+
+
+
+        // 2. Recursive Deep Copy (Handles Complex Cases):
+
+        function makeDiipCopy(obj) {
+            // Base case: If obj is null or not an object (primitive types like number, string, boolean, etc.), return the value directly.
+
+            // console.log(typeof null); // "object"
+            if (obj === null || typeof obj !== "object") {
+                return obj;
+            }
+            let copy = Array.isArray(obj) ? [] : {};
+
+            for (let keys in obj) {
+                if (obj.hasOwnProperty(keys)) {//return true/false
+                    // Recursively copy nested objects/arrays
+                    copy[keys] = makeDiipCopy(obj[keys]);
+                }
+            }
+            return copy;
+        }
+        let deepCopy2 = makeDiipCopy(obj2)
+        console.log(obj2);
+        console.log(deepCopy2);
+
+
+        // let keys = Object.keys(obj);//return array of key -> [name,age,account]
+        // for(let i=0;i<keys.length;i++){
+        //     copy[keys[i]] = makeDiipCopy(obj[keys[i]]);
+        // }
+    </script>
+</body>
+
+</html>
