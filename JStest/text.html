@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+</head>
+<body>
+
+    <h1 class="timer">0</h1>
+    
+    <button class="start" onclick="Start()">Start</button>
+    <button class="stop" onclick="StopInt()">Stop</button>
+    <button class="reset" onclick="Reset()">reset</button>
+
+
+    <script>
+        let start = document.querySelector(".start");
+        let timer = document.querySelector(".timer");
+        let stop = document.querySelector(".stop");
+        let reset = document.querySelector(".reset");
+
+
+let inte;
+        let count = 0;
+
+        function Start(){
+           inte = setInterval(() => {
+               console.log(timer);
+               count++;
+               timer.innerHTML =count;
+
+            }, 1000);
+            
+            
+        }
+
+        function StopInt(){
+            clearInterval(inte)
+        }
+
+        function Reset(){
+            timer.innerHTML =0;
+        }
+
+        
+        
+
+    </script>
+</body>
+</html>
