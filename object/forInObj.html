@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let person = {
+            f_name:"imran",
+            l_name:"hussain",
+            continue:"9090909090",
+        }
+
+        for (const key in person) {
+            console.log(`Key is ${key} : ${person[key]}`);  
+        }
+
+        let key = Object.keys(person);//return array
+        console.log(`Object.keys Return array of Keys`);
+        console.log(key);
+        console.log(key[0]);
+
+        let value = Object.values(person);//return array
+        console.log(`Object.values Return array of Values`);
+        console.log(value);
+        console.log(value[0]);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj = {
+            f_name:"imran",
+            fun:function(){
+                alert("This is from Inside the object");
+            },
+            cars:["BMW","Audi","Maruti"]
+        }
+
+        let boj1 = {
+            l_name:"hussain",
+            contact:9090909090
+        }
+
+        boj1.contact = 9999999999;
+        boj1.place = "bhopal";
+
+        delete boj1.place;
+
+        let obj3 = {...obj,...boj1};
+        console.log(obj3);
+
+        obj.fun();
+        obj.cars.forEach( (elem)=>{
+            console.log(elem);
+            
+        })
+
+        
+        
+    </script>
+</body>
+</html>
