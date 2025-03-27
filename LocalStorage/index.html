@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- //LocalStorage => setItem, getItem, removeItem and clear
+
+    setItem => Store data in browser LocalStorage
+    getItem => fetch/get data in browser LocalStorage 
+    removeItem => remove any store data in browser LocalStorage 
+    clear => clear all store data in browser LocalStorage  -->
+
+    <script>
+     localStorage.setItem("userName","Imran");
+     let name = localStorage.getItem("userName")
+    //  document.write(name);
+     console.log(typeof name);
+
+     localStorage.setItem("age",23);
+     
+     localStorage.removeItem("age");
+    //  localStorage.clear();
+
+    //for object 
+
+    let obj = {
+        name:"imran",
+        age:23,
+        contact:909090909090
+    };
+    localStorage.setItem("person",JSON.stringify(obj));
+
+    let data = localStorage.getItem("person");
+
+    let allData = JSON.parse(data);
+    console.log(allData);
+
+    let arr = ["imran",23,"Bhopal"];
+    localStorage.setItem("arr",JSON.stringify(arr));
+    let getArr = localStorage.getItem("arr")
+    let changeInArr = JSON.parse(getArr)
+    console.log(changeInArr);
+
+    
+    
+    </script>
+</body>
+</html>
