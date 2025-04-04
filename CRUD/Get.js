@@ -16,11 +16,11 @@ let getData = async () => {//async for make function async function
     data.map((event) => {
         showData.innerHTML += `
        <tr>
-       <td>title:${event.title}</td>
-       <td>storage:${event.storage}</td>
-       <td>price:${event.price}</td>
-       <td>off:${event.off}</td>
-       <td>stock:${event.stock}</td>
+       <td>${event.title}</td>
+       <td>${event.storage}</td>
+       <td>${event.price}</td>
+       <td>${event.off}</td>
+       <td>${event.stock}</td>
        </tr>
         `
     })
