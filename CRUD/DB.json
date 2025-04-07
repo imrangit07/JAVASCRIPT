@@ -1,33 +1,20 @@
-
 {
-    "product":[
-        {
-            "title":"Redmi 5g mobail",
-            "storage":"128gb",
-            "price":40000,
-            "off":"25%",
-            "stock":"45"
-        },
-        {
-            "title":"POKO 5g mobail",
-            "storage":"128gb",
-            "price":40000,
-            "off":"25%",
-            "stock":"45"
-        },
-        {
-            "title":"Iphone 5g mobail",
-            "storage":"128gb",
-            "price":40000,
-            "off":"25%",
-            "stock":"45"
-        },
-        {
-            "title":"Samsung 5g mobail",
-            "storage":"128gb",
-            "price":40000,
-            "off":"25%",
-            "stock":"45"
-        }
-    ]
+  "product": [
+    {
+      "id": "5042",
+      "title": "mobail",
+      "storage": "64",
+      "price": "9000",
+      "off": "90",
+      "stock": "9"
+    },
+    {
+      "id": "642c",
+      "title": "laptop",
+      "storage": "64",
+      "price": "9000",
+      "off": "90",
+      "stock": "9"
+    }
+  ]
 }
