@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage</title>
+</head>
+
+<body>
+    <h1>LocalStorage</h1>
+
+    <input type="text" id="name">
+
+    <button onclick="save()">click</button>
+    <script>
+
+        function localStore (){
+          let localData = localStorage.getItem("user")
+
+          if(!localData){
+            return []
+          }
+            let userData = JSON.parse(localData)
+          return userData;
+        }
+
+        function save() {
+            const name = document.querySelector("#name").value;
+            console.log(name);
+            
+            let local = localStore();
+            
+            if(local){
+                local.push(name);
+                console.log(local);
+            }
+           
+           localStorage.setItem("user",`${JSON.stringify(local)}`)
+        }
+
+    </script>
+</body>
+
+</html>
